@@ -1,7 +1,9 @@
 # Личный проект «Девайс»
 
 * Студент: [Konstantin Tarasov](https://up.htmlacademy.ru/htmlcss/24/user/832711).
-* Наставник: [Сергей Рубец] (https://htmlacademy.ru/profile/id41580).
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/id41580).
+
+
 
 ---
 
