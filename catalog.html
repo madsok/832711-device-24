@@ -11,7 +11,18 @@
           <img src="img/logo.svg" width="350" height="200" alt="Логотип интерет-магазина «Device»">
         </a>
         <ul class="site-navigation">
-          <li class="catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="catalog">
+            <a href="catalog.html">Каталог товаров</a>
+            <button class="modal-open" type="button" aria-label="Открыть каталог товаров">X</button>
+            <ul class="catalog-items">
+              <li><a href="VR.html">Виртуальная реальность</a></li>
+              <li><a href="monopods.html">Монопды для селфи</a></li>
+              <li><a href="A-cameras.html">Экшн-камеры</a></li>
+              <li><a href="fitness-trackers.html">Фитнес-браслеты</a></li>
+              <li><a href="smarts-watches.html">Умные часы</a></li>
+              <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
@@ -34,6 +45,49 @@
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="monopods-item">Моноподы для селфи</li>
       </ul>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul class="colors-list">
+              <li class="filter-color">
+                <input class="filter-color-black" type="checkbox" name="black" id="filter-by-black" checked>
+                <label for="filter-by-black">Черный</label>
+              </li>
+              <li class="filter-color">
+                <input class="filter-color-white" type="checkbox" name="white" id="filter-by-white">
+                <label for="filter-by-white">Белый</label>
+              </li>
+              <li class="filter-color">
+                <input class="filter-color-blue" type="checkbox" name="blue" id="filter-by-blue" checked>
+                <label for="filter-by-blue">Синий</label>
+              </li>
+              <li class="filter-color">
+                <input class="filter-color-red" type="checkbox" name="red" id="filter-by-red" checked>
+                <label for="filter-by-red">Красный</label>
+              </li>
+              <li class="filter-color">
+                <input class="filter-color-pink" type="checkbox" name="pink" id="filter-by-pink">
+                <label for="filter-by-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul class="bluetooth-filter">
+              <li class="filter-presence">
+                <input type="radio" name="presence" id="yes" value="yes" checked>
+                <label for="yes">Есть</label>
+              </li>
+              <li class="filter-presence">
+                <input type="radio" name="presence" id="no" value="no">
+                <label for="no">Нет</label>
+              </li>
+          </fieldset>
+          <button type="submit" name="filter-button">Показать</button>
+        </form>
+      </section>
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -96,6 +150,7 @@
         </p>
       </address>
       <section class="footer-navigation">
+        <h3 class="visually-hidden">Навигация по сайту</h3>
         <ul class="site-navigation">
           <li>
             <a href="delivery.html">Доставка</a>
@@ -115,6 +170,7 @@
         </ul>
       </section>
       <section class="footer-social">
+        <h3 class="visually-hidden">Ссылки на социальные сети</h3>
         <ul>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -122,7 +178,7 @@
         </ul>
       </section>
       <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="35" height="27" alt="Лого Академии">
+        <img src="img/logo-html.svg" width="35" height="27" alt="Профессиональный онлайн‑курс HTML и CSS, уровень 1">
       </a>
     </footer>
   </body>
