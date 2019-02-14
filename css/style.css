@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('../fonts/gilroyextrabold.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../fonts/gilroylight.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  width: 1160px;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+body {
+  margin: 0;
+  width: 1440px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+footer {
+  width: 1440px;
+  background-color: rgba(70, 70, 70, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation,
+.user-navigation,
+.site-navigation-footer,
+.user-navigation-footer,
+.social-list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.site-navigation a {
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #000000;
+}
+
+.search-field {
+  opacity: 0.3;
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(240, 197, 46, 0);
+  border: 0;
+}
+
+.user-navigation a {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
+.about-us h2 {
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+
+.about-us p {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
+}
+
+.companies-list .list-item {
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+  color: #000000;
+}
+
+.about-us a {
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #000000;
+}
+
+.contacts h2 {
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+
+.contacts p {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
+}
+
+.contacts a {
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #000000;
+}
+
+footer address {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.site-navigation-footer a {
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.user-navigation-footer a {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-write-us {
+  display: none;
+}
+
+.modal-map {
+  display: none;
+}
