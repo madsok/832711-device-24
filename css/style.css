@@ -37,7 +37,11 @@ a {
 .user-navigation,
 .site-navigation-footer,
 .user-navigation-footer,
-.social-list {
+.social-list,
+.monopods,
+.colors-list,
+.bluetooth-filter,
+.catalog-list {
   list-style: none;
 }
 
@@ -61,7 +65,28 @@ a {
   margin: -1px;
 }
 
-.site-navigation a {
+.catalog-item-price {
+  font-family: 'Gilroy Light';
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #464646;
+}
+
+.site-navigation a,
+.about-us h2,
+.companies-list .list-item,
+.about-us a,
+.contacts h2,
+.contacts a,
+.site-navigation-footer a,
+.path h2,
+.item a,
+.add-to-cart {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -70,11 +95,69 @@ a {
   line-height: 1.33;
   letter-spacing: 3.6px;
   text-align: left;
-  text-transform: uppercase;
   color: #000000;
 }
 
-.catalog-items a {
+.site-navigation a {
+  text-transform: uppercase;
+}
+
+.about-us h2 {
+  font-size: 47px;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+}
+
+.companies-list .list-item {
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.about-us a {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts h2 {
+  font-size: 47px;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+}
+
+.contacts a {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.site-navigation-footer a {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.site-navigation-footer a:hover,
+.site-navigation-footer a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-navigation-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.path h2 {
+  font-size: 47px;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+}
+
+.catalog-items a,
+.search-field,
+.user-navigation a,
+.about-us p,
+.contacts p,
+footer address,
+.user-navigation-footer a,
+.monopods,
+.compare {
   font-family: 'Open Sans Light', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -83,21 +166,16 @@ a {
   line-height: 2.4;
   letter-spacing: 0.2px;
   text-align: left;
-  text-transform: none;
   color: #000000;
+}
+
+.catalog-items a {
+  text-transform: none;
 }
 
 .search-field {
   opacity: 0.3;
-  font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: rgba(0, 0, 0, 0.3);
   background-color: rgba(240, 197, 46, 0);
   border: 0;
 }
@@ -112,134 +190,66 @@ a {
 }
 
 .user-navigation a {
-  font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #000000;
-}
-
-.about-us h2 {
-  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.02;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #000000;
 }
 
 .about-us p {
-  font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2;
   letter-spacing: normal;
-  text-align: left;
   color: #464646;
-}
-
-.companies-list .list-item {
-  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 2.5;
-  color: #000000;
-}
-
-.about-us a {
-  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 3.6px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.contacts h2 {
-  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.02;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #000000;
 }
 
 .contacts p {
-  font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2;
   letter-spacing: normal;
-  text-align: left;
   color: #464646;
 }
 
-.contacts a {
-  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 3.6px;
-  text-align: center;
-  color: #000000;
-}
-
 footer address {
-  font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2;
   letter-spacing: normal;
-  text-align: left;
   color: #ffffff;
 }
 
+.user-navigation-footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
 
-.site-navigation-footer a {
-  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 3.6px;
-  text-align: left;
+.user-navigation-footer a:hover,
+.user-navigation-footer a:focus {
   color: rgba(255, 255, 255, 1);
 }
 
-.user-navigation-footer a {
-  font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.4;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.7);
+.user-navigation-footer a:active {
+  color: rgba(255, 255, 255, 0.3)
 }
+
+.monopods a {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.item a {
+  letter-spacing: 0.2px;
+}
+
+.add-to-cart {
+  text-transform: uppercase;
+}
+
+.compare {
+  opacity: 0.5;
+  font-size: 13px;
+  line-height: 2.77;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Модалки */
 
 .modal-write-us {
   display: none;
