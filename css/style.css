@@ -18,7 +18,6 @@ header {
 }
 
 body {
-  margin: 0;
   width: 1440px;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -31,6 +30,14 @@ footer {
 a {
   text-decoration: none;
 }
+
+.div {
+  width: 260px;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
+/* Маркеры у списков*/
 
 .site-navigation,
 .catalog-items,
@@ -45,16 +52,51 @@ a {
   list-style: none;
 }
 
+.logo:hover,
+.logo:focus,
+.logo-footer:hover,
+.logo-footer:focus {
+  opacity: 0.6;
+}
+
+.logo:active,
+.logo-footer:active {
+  opacity: 0.3;
+}
+
+.logo-html:hover,
+.logo-html:focus {
+  opacity: 0.6;
+}
+
+.logo-html:active {
+  opacity: 0.3;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:focus,
+.monopods a:hover,
+.monopods a:focus {
   color: rgba(0, 0, 0, 0.6)
+}
+
+.about-us .button-about:active {
+  opacity: 0.3;
+}
+
+.contacts .button-write:active {
+  opacity: 0.3;
 }
 
 .site-navigation a:active,
 .user-navigation a:active {
   color: rgba(0, 0, 0, 0.3)
+}
+
+.monopods a:active {
+  color: rgba(0, 0, 0, 0.1)
 }
 
 .visually-hidden {
@@ -65,66 +107,73 @@ a {
   margin: -1px;
 }
 
+/* Шрифт Gilroy Light*/
+
 .catalog-item-price {
   font-family: 'Gilroy Light';
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.2px;
   text-align: right;
   color: #464646;
 }
 
+/* Шрифт Gilroy ExtraBold*/
+
 .site-navigation a,
 .about-us h2,
 .companies-list .list-item,
-.about-us a,
+.about-us .button-about,
 .contacts h2,
-.contacts a,
+.contacts .button-write,
 .site-navigation-footer a,
 .path h2,
 .item a,
-.add-to-cart {
+.add-to-cart,
+fieldset .color,
+fieldset .bth {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
+  line-height: 24px;
   letter-spacing: 3.6px;
   text-align: left;
   color: #000000;
 }
 
-.site-navigation a {
+.add-to-cart {
   text-transform: uppercase;
 }
 
 .about-us h2 {
   font-size: 47px;
-  line-height: 1.02;
+  line-height: 48px;
   letter-spacing: 0.5px;
 }
 
 .companies-list .list-item {
   font-size: 16px;
-  line-height: 2.5;
+  line-height: 40px;
 }
 
-.about-us a {
+.about-us .button-about {
   text-align: center;
   text-transform: uppercase;
 }
 
 .contacts h2 {
   font-size: 47px;
-  line-height: 1.02;
+  line-height: 48px;
   letter-spacing: 0.5px;
 }
 
-.contacts a {
+.contacts .button-write {
+  background-size: 220px 40px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -145,9 +194,11 @@ a {
 
 .path h2 {
   font-size: 47px;
-  line-height: 1.02;
+  line-height: 48px;
   letter-spacing: 0.5px;
 }
+
+/* Шрифт Open Sans*/
 
 .catalog-items a,
 .search-field,
@@ -157,27 +208,37 @@ a {
 footer address,
 .user-navigation-footer a,
 .monopods,
-.compare {
+.compare,
+.filter-color label,
+.filter-presence label {
   font-family: 'Open Sans Light', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 2.4;
+  line-height: 30px;
   letter-spacing: 0.2px;
   text-align: left;
   color: #000000;
 }
 
+/* Раскрывающийся каталог*/
+
 .catalog-items a {
   text-transform: none;
 }
 
-.search-field {
-  opacity: 0.3;
-  line-height: 2;
+/* Форма поиска*/
+
+.search-form {
+
+  line-height: 30px;
   background-color: rgba(240, 197, 46, 0);
-  border: 0;
+}
+
+.search-field {
+  border: none;
+  background-color: rgba(240, 197, 46, 0);
 }
 
 .search-field:hover {
@@ -189,26 +250,34 @@ footer address,
   color: #000000;
 }
 
-.user-navigation a {
-  line-height: 2;
-}
+
+/* О нас*/
 
 .about-us p {
-  line-height: 2;
   letter-spacing: normal;
   color: #464646;
 }
+
+/* Контакты*/
 
 .contacts p {
-  line-height: 2;
   letter-spacing: normal;
   color: #464646;
 }
 
+/* Футер*/
+
 footer address {
-  line-height: 2;
   letter-spacing: normal;
   color: #ffffff;
+}
+
+.logo-footer path {
+  fill: #ffc600;
+}
+
+.logo-html path {
+  fill: #ffc600;
 }
 
 .user-navigation-footer a {
@@ -224,9 +293,11 @@ footer address {
   color: rgba(255, 255, 255, 0.3)
 }
 
+/* Карточки каталога*/
+
 .monopods a {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: 0.1px;
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
@@ -243,10 +314,65 @@ footer address {
 .compare {
   opacity: 0.5;
   font-size: 13px;
-  line-height: 2.77;
+  line-height: 36px;
   letter-spacing: 0.1px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
+}
+
+/* Фильтр каталога*/
+
+form {
+  width: 467;
+  background-color: #ebebeb;
+}
+
+.filter-color input:disabled + label {
+  opacity: 0.25;
+}
+
+.filter-color input:hover {
+  opacity: 0.6;
+}
+
+.filter-color input:checked {
+  opacity: 1;
+}
+
+.filter-color label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+
+.bluetooth-filter input:disabled + label {
+  opacity: 0.25;
+}
+
+.bluetooth-filter input:hover {
+  opacity: 0.6;
+}
+
+.bluetooth-filter input:checked {
+  opacity: 1;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset .color {
+  letter-spacing: 0.2px;
+}
+
+fieldset .bth {
+  letter-spacing: 0.2px;
+}
+
+.filter-presence label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
 }
 
 /* Модалки */
