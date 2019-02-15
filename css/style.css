@@ -134,7 +134,8 @@ a {
 .item a,
 .add-to-cart,
 fieldset .color,
-fieldset .bth {
+fieldset .bth,
+.show {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -373,6 +374,12 @@ fieldset .bth {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.1px;
+}
+
+.show {
+  text-transform: uppercase;
+  background-color: #ebebeb;
+  border: none;
 }
 
 /* Модалки */
