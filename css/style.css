@@ -13,28 +13,19 @@
 }
 
 header {
-  width: 1160px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 body {
-  width: 1440px;
   background-color: rgba(255, 255, 255, 1);
 }
 
 footer {
-  width: 1440px;
   background-color: rgba(70, 70, 70, 1);
 }
 
 a {
   text-decoration: none;
-}
-
-.div {
-  width: 260px;
-  height: 8px;
-  background-color: #f0c52e;
 }
 
 /* Маркеры у списков*/
@@ -79,24 +70,16 @@ a {
 .user-navigation a:focus,
 .monopods a:hover,
 .monopods a:focus {
-  color: rgba(0, 0, 0, 0.6)
-}
-
-.about-us .button-about:active {
-  opacity: 0.3;
-}
-
-.contacts .button-write:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .site-navigation a:active,
 .user-navigation a:active {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .monopods a:active {
-  color: rgba(0, 0, 0, 0.1)
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .visually-hidden {
@@ -117,7 +100,7 @@ a {
   font-stretch: normal;
   line-height: 24px;
   letter-spacing: 0.2px;
-  text-align: right;
+  text-align: left;
   color: #464646;
 }
 
@@ -133,7 +116,7 @@ a {
 .path h2,
 .item a,
 .add-to-cart,
-fieldset .color,
+fieldset .filter-color,
 fieldset .bth,
 .show {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
@@ -145,6 +128,10 @@ fieldset .bth,
   letter-spacing: 3.6px;
   text-align: left;
   color: #000000;
+}
+
+.site-navigation a {
+  text-transform: uppercase;
 }
 
 .add-to-cart {
@@ -174,7 +161,6 @@ fieldset .bth,
 }
 
 .contacts .button-write {
-  background-size: 220px 40px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -210,9 +196,9 @@ footer address,
 .user-navigation-footer a,
 .monopods,
 .compare,
-.filter-color label,
+.color-item label,
 .filter-presence label {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -251,8 +237,45 @@ footer address,
   color: #000000;
 }
 
-
 /* О нас*/
+
+.btn {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 260px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 18px;
+  left: -2px;
+  width: inherit;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
+.btn:hover::before,
+.btn:focus::before {
+  top: 0;
+  margin: 0;
+  height: 40px;
+}
+
+.btn:active::before {
+  top: 0;
+  height: 40px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .about-us p {
   letter-spacing: normal;
@@ -291,7 +314,7 @@ footer address {
 }
 
 .user-navigation-footer a:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Карточки каталога*/
@@ -308,7 +331,14 @@ footer address {
   letter-spacing: 0.2px;
 }
 
+.show {
+  width: 200px;
+  padding-left: 42px;
+}
+
 .add-to-cart {
+  width: 200px;
+  padding-left: 37px;
   text-transform: uppercase;
 }
 
@@ -321,6 +351,7 @@ footer address {
   color: rgba(0, 0, 0, 0.5);
 }
 
+
 /* Фильтр каталога*/
 
 form {
@@ -328,19 +359,19 @@ form {
   background-color: #ebebeb;
 }
 
-.filter-color input:disabled + label {
+.color-item input:disabled + label {
   opacity: 0.25;
 }
 
-.filter-color input:hover {
+.color-item input:hover {
   opacity: 0.6;
 }
 
-.filter-color input:checked {
+.color-item input:checked {
   opacity: 1;
 }
 
-.filter-color label {
+.color-item label {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.1px;
@@ -362,11 +393,11 @@ fieldset {
   border: none;
 }
 
-fieldset .color {
+fieldset .filter-color {
   letter-spacing: 0.2px;
 }
 
-fieldset .bth {
+fieldset .btn {
   letter-spacing: 0.2px;
 }
 
