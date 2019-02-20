@@ -211,6 +211,10 @@ footer address,
 
 /* Раскрывающийся каталог*/
 
+.catalog-items {
+  display: none;
+}
+
 .catalog-items a {
   text-transform: none;
 }
@@ -421,4 +425,88 @@ fieldset .btn {
 
 .modal-map {
   display: none;
+}
+
+
+/* Сетки */
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 2795px;
+}
+
+.main-header {
+
+  min-width: 1160px;
+  margin-top: 40px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+
+
+  */vremenno*/
+  min-height: 80px;
+
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.search {
+  display: flex;
+  margin-left: 99px;
+}
+
+.user-navigation {
+  display: flex;
+  margin-right: 61px;
+
+}
+
+.logo {
+  margin-left: 59px;
+}
+
+.compare-link {
+  margin-right: 65px;
+}
+
+.login-link {
+  margin-right: 238px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  order: 99;
+  padding: 0;
+  margin: 60px;
+}
+
+.catalog-subitems {
+  display: flex;
+}
+
+.warranity {
+  margin-right: 114px;
+}
+
+.delivery {
+  margin-right: 38px;
+}
+
+.container {
+  display: flex;
+}
+
+.main-footer {
+  display: flex;
 }
