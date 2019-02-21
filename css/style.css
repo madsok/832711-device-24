@@ -192,7 +192,8 @@ fieldset .bth,
 .user-navigation a,
 .about-us p,
 .contacts p,
-footer address,
+.company-info .address,
+.company-info .phone,
 .user-navigation-footer a,
 .monopods,
 .compare,
@@ -295,7 +296,8 @@ footer address,
 
 /* Футер*/
 
-footer address {
+.company-info .address,
+.company-info .phone {
   letter-spacing: normal;
   color: #ffffff;
 }
@@ -430,83 +432,219 @@ fieldset .btn {
 
 /* Сетки */
 
-html,
-body {
+html, body {
   min-width: 1440px;
   min-height: 2795px;
 }
 
 .main-header {
-
-  min-width: 1160px;
+  width: 1160px;
+  margin: 0 auto;
   margin-top: 40px;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-bottom: 37px;
+
 }
+
 
 .main-navigation {
   display: flex;
   flex-direction: column;
-
-
-  */vremenno*/
-  min-height: 80px;
-
-}
-
-.search-wrapper {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.search {
-  display: flex;
-  margin-left: 99px;
-}
-
-.user-navigation {
-  display: flex;
-  margin-right: 61px;
+  width: 1040px;
+  padding-left: 60px;
+  padding-right: 60px;
 
 }
 
 .logo {
-  margin-left: 59px;
+  position: relative;
+  top: -19px;
 }
 
-.compare-link {
-  margin-right: 65px;
-}
-
-.login-link {
-  margin-right: 238px;
+.search {
+  width: 440px;
+  margin-right: 100px;
 }
 
 .site-navigation {
   display: flex;
+  order: 1;
   justify-content: space-between;
-  order: 99;
-  padding: 0;
-  margin: 60px;
+  width: 1040px;
+  padding: 0px;
 }
 
-.catalog-subitems {
+.user-wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 1040px;
 }
 
-.warranity {
-  margin-right: 114px;
-}
-
-.delivery {
-  margin-right: 38px;
+.user-navigation {
+  display: flex;
+  width: 500px;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .container {
   display: flex;
+  justify-content: center;
+  width: 1160px
+  margin-bottom: 0 auto;
+
+}
+
+.about-us {
+  width: 560px;
+  padding-right: 20px;
+}
+
+.contacts {
+  width: 560px;
+  padding-left: 20px;
 }
 
 .main-footer {
   display: flex;
+  min-width: 1440px;
+  margin: 0 auto;
+
+}
+
+.main-footer-container {
+  display: flex;
+  width: 1160px;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+
+.logo-user-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 63px;
+  margin-bottom: 37px;
+}
+
+.user-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.site-navigation-footer {
+  width: 440px;
+  justify-content: space-between;
+}
+
+.site-navigation-footer {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+/* Каталог */
+
+.container-catalog {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.path-wrapper {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.path {
+  width: 1040px;
+
+}
+
+.path h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.monopods {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+
+}
+
+.filter {
+  min-height: 1287px;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+.cards-catalog {
+  width: 880px;
+  margin-left: 50px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(2n) {
+
+}
+
+.item-info h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p.catalog-item-price {
+  padding: 0;
+  margin-top: 0;
 }
