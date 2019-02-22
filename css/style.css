@@ -432,27 +432,18 @@ fieldset .btn {
 
 /* Сетки */
 
-html, body {
-  min-width: 1440px;
-  min-height: 2795px;
-}
-
 .main-header {
   width: 1160px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 37px;
-
 }
 
 
 .main-navigation {
-  display: flex;
-  flex-direction: column;
   width: 1040px;
   padding-left: 60px;
   padding-right: 60px;
-
 }
 
 .logo {
@@ -467,7 +458,6 @@ html, body {
 
 .site-navigation {
   display: flex;
-  order: 1;
   justify-content: space-between;
   width: 1040px;
   padding: 0px;
@@ -489,9 +479,8 @@ html, body {
 .container {
   display: flex;
   justify-content: center;
-  width: 1160px
+  width: 1360px;
   margin-bottom: 0 auto;
-
 }
 
 .about-us {
@@ -508,7 +497,6 @@ html, body {
   display: flex;
   min-width: 1440px;
   margin: 0 auto;
-
 }
 
 .main-footer-container {
@@ -516,7 +504,6 @@ html, body {
   width: 1160px;
   flex-direction: column;
   margin: 0 auto;
-
 }
 
 .logo-user-wrapper {
@@ -532,7 +519,6 @@ html, body {
   width: 330px;
   margin: 0;
   padding: 0;
-
 }
 
 .company-info {
@@ -550,7 +536,6 @@ html, body {
   display: flex;
   margin: 0;
   padding: 0;
-
 }
 
 .footer-social {
@@ -558,12 +543,11 @@ html, body {
   justify-content: space-between;
 }
 
-.social.list {
+.social-list {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-
 }
 
 /* Каталог */
@@ -572,7 +556,6 @@ html, body {
   width: 1440px;
   margin: 0 auto;
   padding: 0;
-
 }
 
 .path-wrapper {
@@ -582,7 +565,6 @@ html, body {
 
 .path {
   width: 1040px;
-
 }
 
 .path h2 {
@@ -594,14 +576,12 @@ html, body {
   display: flex;
   margin: 0;
   padding: 0;
-
 }
 
 .filter-container {
   display: flex;
   justify-content: space-between;
-  width: 1100px;
-
+  min-width: 1100px;
 }
 
 .filter {
@@ -621,7 +601,6 @@ fieldset {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-
   padding: 0;
 }
 
@@ -635,9 +614,6 @@ fieldset {
   margin-right: 20px;
 }
 
-.catalog-item:nth-child(2n) {
-
-}
 
 .item-info h3 {
   margin: 0;
