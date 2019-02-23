@@ -118,7 +118,9 @@ a {
 .add-to-cart,
 fieldset .filter-color,
 fieldset .bth,
-.show {
+.show,
+.filter-title,
+.sort-title {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -183,6 +185,13 @@ fieldset .bth,
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.5px;
+}
+
+.filter-title,
+.sort-title {
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
 }
 
 /* Шрифт Open Sans*/
@@ -360,8 +369,7 @@ fieldset .bth,
 
 /* Фильтр каталога*/
 
-form {
-  width: 467;
+.filter {
   background-color: #ebebeb;
 }
 
@@ -480,7 +488,7 @@ fieldset .btn {
   display: flex;
   justify-content: center;
   width: 1360px;
-  margin-bottom: 0 auto;
+  margin: 0 auto;
 }
 
 .about-us {
@@ -534,7 +542,7 @@ fieldset .btn {
 
 .site-navigation-footer {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -547,7 +555,6 @@ fieldset .btn {
   display: flex;
   margin: 0 auto;
   padding: 0;
-  list-style: none;
 }
 
 /* Каталог */
@@ -574,28 +581,140 @@ fieldset .btn {
 
 .monopods {
   display: flex;
+  width: 385px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .filter-container {
   display: flex;
-  justify-content: space-between;
   min-width: 1100px;
 }
 
-.filter {
-  min-height: 1287px;
+.filter-title {
+  position: relative;
+  margin: 0;
+  margin-left: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #d9d9d9;
 }
 
-fieldset {
+.filter-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin-left: calc(50% - 50vw);
+  background-color: #d9d9d9;
+}
+
+.filter {
+  position: relative;
+  width: 268px;
+  padding-left: 60px;
+  min-height: 1216px;
+}
+
+.filter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin-left: calc(50% - 50vw);
+  background-color: #ebebeb;
+}
+
+.filters {
+  margin-left: 140px;
+}
+
+.color-fieldset,
+.bluetooth-fieldset {
   padding: 0;
   margin: 0;
 }
 
+.colors-list {
+  padding: 0;
+  margin: 0;
+}
+
+.sorter-wrapper {
+  min-width: 833px;
+}
+
+.sorter {
+  margin-bottom: 143px;
+}
+
+.sorter-wrapper {
+  position: relative;
+  height: 84px;
+}
+
+.sorter-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin-right: calc(50% - 50vw);
+  background-color: #ebebeb;
+}
+
+.sort-title {
+  position: absolute;
+  margin: 0;
+  margin-left: 74px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ebebeb;
+}
+
+.sort-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  margin-left: calc(50% - 50vw);
+  background-color: #ebebeb;
+}
+
+.sort-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  margin-right: calc(50% - 50vw);
+  background-color: #ebebeb;
+}
+
 .cards-catalog {
-  width: 880px;
-  margin-left: 50px;
+  min-width: 854px;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-list {
@@ -614,6 +733,9 @@ fieldset {
   margin-right: 20px;
 }
 
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
 
 .item-info h3 {
   margin: 0;
