@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 header {
   background-color: rgba(240, 197, 46, 0.5);
 }
@@ -449,7 +453,6 @@ fieldset .btn {
   margin-bottom: 37px;
 }
 
-
 .main-navigation {
   width: 1040px;
   padding-left: 60px;
@@ -549,9 +552,7 @@ fieldset .btn {
   display: flex;
   width: 1160px;
   flex-direction: column;
-  margin: 0;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0 auto;
 }
 
 .logo-user-wrapper {
@@ -730,7 +731,6 @@ fieldset .btn {
 
 .sorter {
   margin-bottom: 70px;
-  overflow: hidden;
 }
 
 .sort-title {
@@ -751,6 +751,18 @@ fieldset .btn {
   left: 0;
   z-index: -2;
   margin-left: calc(50% - 50vw);
+  background-color: #ebebeb;
+}
+
+.sort-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  margin-right: calc(50% - 50vw);
   background-color: #ebebeb;
 }
 
