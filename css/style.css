@@ -17,6 +17,7 @@ header {
 }
 
 body {
+  min-width: 1440px;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -509,7 +510,7 @@ fieldset .btn {
 .container {
   display: flex;
   justify-content: center;
-  width: 1360px;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -542,14 +543,15 @@ fieldset .btn {
 .main-footer {
   display: flex;
   min-width: 1440px;
-  margin: 0 auto;
 }
 
 .main-footer-container {
   display: flex;
   width: 1160px;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .logo-user-wrapper {
@@ -586,7 +588,7 @@ fieldset .btn {
 }
 
 .footer-navigation {
-  margin-left: 150px;
+  margin-left: 147px;
 }
 
 .warranity-footer {
@@ -600,12 +602,11 @@ fieldset .btn {
 .phone {
   margin: 0;
   padding: 0;
-  margin-left: 160px;
+  margin-left: 207px;
 }
 
 .footer-social {
   display: flex;
-
 }
 
 .social-list {
@@ -615,7 +616,7 @@ fieldset .btn {
 }
 
 .logo-html {
-  margin-left: 470px;
+  margin-left: 518px;
 }
 
 /* Каталог */
@@ -647,6 +648,7 @@ fieldset .btn {
 .path {
   width: 1040px;
   margin: 0;
+  padding-left: 60px;
 }
 
 .path h2 {
@@ -671,7 +673,6 @@ fieldset .btn {
 .filter-title {
   position: relative;
   margin: 0;
-  margin-left: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #d9d9d9;
@@ -692,7 +693,6 @@ fieldset .btn {
 .filter {
   position: relative;
   width: 268px;
-  padding-left: 60px;
   min-height: 1216px;
 }
 
@@ -710,6 +710,7 @@ fieldset .btn {
 
 .filters {
   margin-left: 140px;
+  padding-left: 60px;
 }
 
 .color-fieldset,
@@ -728,28 +729,12 @@ fieldset .btn {
 }
 
 .sorter {
-  margin-bottom: 143px;
-}
-
-.sorter-wrapper {
-  position: relative;
-  height: 84px;
-}
-
-.sorter-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin-right: calc(50% - 50vw);
-  background-color: #ebebeb;
+  margin-bottom: 70px;
+  overflow: hidden;
 }
 
 .sort-title {
-  position: absolute;
+  position: relative;
   margin: 0;
   margin-left: 74px;
   padding-top: 30px;
@@ -766,18 +751,6 @@ fieldset .btn {
   left: 0;
   z-index: -2;
   margin-left: calc(50% - 50vw);
-  background-color: #ebebeb;
-}
-
-.sort-title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -2;
-  margin-right: calc(50% - 50vw);
   background-color: #ebebeb;
 }
 
