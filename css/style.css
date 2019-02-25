@@ -453,6 +453,7 @@ fieldset .btn {
   width: 1040px;
   padding-left: 60px;
   padding-right: 60px;
+  padding-bottom: 56px;
 }
 
 .logo {
@@ -461,8 +462,7 @@ fieldset .btn {
 }
 
 .search {
-  width: 440px;
-  margin-right: 100px;
+  width: 443px;
 }
 
 .site-navigation {
@@ -470,19 +470,40 @@ fieldset .btn {
   justify-content: space-between;
   width: 1040px;
   padding: 0px;
+  margin: 0;
+}
+
+.delivery {
+  margin-left: 295px;
+}
+
+.warranity {
+  margin-left: 39px;
+}
+
+.contacts-link {
+  margin-left: 100px;
 }
 
 .user-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 1040px;
+  margin-bottom: 55px;
 }
 
 .user-navigation {
   display: flex;
-  width: 500px;
   padding: 0;
-  justify-content: space-between;
+  margin: 0;
+  margin-left: 100px;
+}
+
+.compare-link {
+  margin-left: 220px;
+}
+
+.cart-link {
+  margin-left: 42px;
+  padding-right: 0;
 }
 
 .container {
@@ -492,14 +513,30 @@ fieldset .btn {
   margin: 0 auto;
 }
 
+.about-header,
+.contacts-header {
+  padding: 0;
+  margin: 0;
+}
+
 .about-us {
   width: 560px;
-  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.companies-list {
+  margin: 0;
+  margin-bottom: 80px;
 }
 
 .contacts {
   width: 560px;
-  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.map-block {
+  margin: 0;
+  margin-bottom: 44px;
 }
 
 .main-footer {
@@ -517,48 +554,84 @@ fieldset .btn {
 
 .logo-user-wrapper {
   display: flex;
-  justify-content: space-between;
   padding-top: 63px;
-  margin-bottom: 37px;
+  margin-bottom: 43px;
 }
 
 .user-navigation-footer {
   display: flex;
-  justify-content: space-between;
-  width: 330px;
   margin: 0;
+  margin-left: 673px;
   padding: 0;
+}
+
+.compare-link-footer {
+  margin-left: 45px;
+}
+
+.cart-link-footer {
+  margin-left: 42px;
 }
 
 .company-info {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 68px;
 }
 
 .site-navigation-footer {
-  width: 440px;
-  justify-content: space-between;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
 }
 
-.site-navigation-footer {
-  display: flex;
-  margin: 0 auto;
+.footer-navigation {
+  margin-left: 150px;
+}
+
+.warranity-footer {
+  margin-left: 38px;
+}
+
+.contacts-link-footer {
+  margin-left: 38px;
+}
+
+.phone {
+  margin: 0;
   padding: 0;
+  margin-left: 160px;
 }
 
 .footer-social {
   display: flex;
-  justify-content: space-between;
+
 }
 
 .social-list {
   display: flex;
-  margin: 0 auto;
   padding: 0;
+  margin-left: 429px;
+}
+
+.logo-html {
+  margin-left: 470px;
 }
 
 /* Каталог */
+
+.exit-button-catalog {
+  margin-left: 20px;
+  opacity: 0.5;
+}
+
+.compare-link-catalog {
+  margin-left: 65px;
+}
+
+.cart-link-catalog {
+  margin-left: 42px;
+}
 
 .container-catalog {
   width: 1440px;
@@ -567,17 +640,19 @@ fieldset .btn {
 }
 
 .path-wrapper {
-  width: 1040px;
-  margin: 0 auto;
+  margin-left: 140px;
+  margin-bottom: 50px;
 }
 
 .path {
   width: 1040px;
+  margin: 0;
 }
 
 .path h2 {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .monopods {
@@ -586,7 +661,6 @@ fieldset .btn {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
 }
 
 .filter-container {
@@ -746,4 +820,21 @@ fieldset .btn {
 p.catalog-item-price {
   padding: 0;
   margin-top: 0;
+}
+
+.user-navigation-footer-catalog {
+  margin-left: 520px;
+}
+
+.exit-button-catalog-footer {
+  opacity: 0.3;
+  margin-left: 20px;
+}
+
+.compare-link-catalog-footer {
+  margin-left: 44px;
+}
+
+.cart-link-catalog-footer {
+  margin-left: 42px;
 }
