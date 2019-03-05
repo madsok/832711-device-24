@@ -99,7 +99,7 @@ a {
 /* Шрифт Gilroy Light*/
 
 .catalog-item-price {
-  font-family: 'Gilroy Light';
+  font-family: 'Gilroy Light', Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -155,6 +155,7 @@ fieldset .bth,
 .companies-list .list-item {
   font-size: 16px;
   line-height: 40px;
+  letter-spacing: normal;
 }
 
 .about-us .button-about {
@@ -654,7 +655,6 @@ fieldset .btn {
 }
 
 .main-footer {
-  display: flex;
   min-width: 1440px;
 }
 
@@ -674,7 +674,7 @@ fieldset .btn {
 .user-navigation-footer {
   display: flex;
   margin: 0;
-  margin-left: 673px;
+  margin-left: 698px;
   padding: 0;
 }
 
