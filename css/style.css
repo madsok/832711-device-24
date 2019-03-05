@@ -468,7 +468,7 @@ fieldset .btn {
 
 .search {
   width: 443px;
-  padding-left: 40px;
+  padding-left: 39px;
   position: relative;
   padding-top: 3px;
 }
@@ -487,47 +487,71 @@ fieldset .btn {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
   width: 1040px;
   padding: 0px;
   margin: 0;
 }
 
+.catalog a {
+  position: relative;
+}
+
+.catalog a::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 230px;
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.catalog {
+  width: 246px;
+}
+
 .delivery {
-  margin-left: 295px;
+  width: 121px;
+  margin-left: 294px;
+  padding: 0;
 }
 
 .warranity {
-  margin-left: 39px;
+  width: 109px;
+  margin-left: 38px;
 }
 
 .contacts-link {
-  margin-left: 100px;
+  width: 117px;
+  margin-left: 114px;
 }
 
 .user-wrapper {
   display: flex;
-  margin-bottom: 55px;
+  margin-bottom: 38px;
 }
 
 .user-navigation {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-left: 53px;
+  margin-left: 83px;
   padding-top: 4px;
 }
 
 .login-link a {
   position: relative;
-  padding-left: 30px;
 }
 
 .login-link a::before {
   content: "";
   position: absolute;
   top: 4px;
-  left: 4px;
+  left: -25px;
   width: 13px;
   height: 12px;
   background-image: url("../img/user.svg");
@@ -544,19 +568,18 @@ fieldset .btn {
 }
 
 .compare-link {
-  margin-left: 218px;
+  margin-left: 238px;
 }
 
 .compare-link a {
   position: relative;
-  padding-left: 19px;
 }
 
 .compare-link a::before {
   content: "";
   position: absolute;
   top: 6px;
-  left: -1px;
+  left: -19px;
   width: 10px;
   height: 10px;
   background-image: url("../img/compare.svg");
@@ -574,15 +597,14 @@ fieldset .btn {
 
 .cart-link {
   position: relative;
-  margin-left: 41px;
-  padding-left: 22px;
+  margin-left: 63px;
 }
 
 .cart-link a::before {
   content: "";
   position: absolute;
   top: 9px;
-  left: 1px;
+  left: -22px;
   width: 12px;
   height: 12px;
   background-image: url("../img/cart.svg");
@@ -597,7 +619,6 @@ fieldset .btn {
 .cart-link a:active::before {
   opacity: 0.3;
 }
-
 
 .container {
   display: flex;
