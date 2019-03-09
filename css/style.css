@@ -693,6 +693,7 @@ fieldset .btn {
 
 .logo-user-wrapper {
   display: flex;
+  justify-content: space-between;
   padding-top: 65px;
   margin-bottom: 43px;
 }
@@ -700,21 +701,86 @@ fieldset .btn {
 .user-navigation-footer {
   display: flex;
   margin: 0;
-  margin-left: 698px;
   padding: 0;
 }
 
+.login-link-footer {
+  position: relative;
+  margin-right: 62px;
+}
+
+.login-link-footer a::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -26px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/user_yellow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login-link-footer a:hover::before,
+.login-link-footer a:focus::before {
+  opacity: 0.6;
+}
+.login-link-footer a:active::before {
+  opacity: 0.3;
+}
+
 .compare-link-footer {
-  margin-left: 45px;
+  position: relative;
+  margin-right: 62px;
+}
+
+.compare-link-footer a::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -19px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/compare_yellow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.compare-link-footer a:hover::before,
+.compare-link-footer a:focus::before {
+  opacity: 0.6;
+}
+.compare-link-footer a:active::before {
+  opacity: 0.3;
 }
 
 .cart-link-footer {
-  margin-left: 42px;
+  position: relative;
+}
+
+.cart-link-footer a::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -20px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/cart_yellow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-link-footer a:hover::before,
+.cart-link-footer a:focus::before {
+  opacity: 0.6;
+}
+.cart-link-footer a:active::before {
+  opacity: 0.3;
 }
 
 .company-info {
   display: flex;
-  margin-bottom: 68px;
+  margin-bottom: 0px;
 }
 
 .site-navigation-footer {
