@@ -811,7 +811,7 @@ fieldset .btn {
 
 .company-info {
   display: flex;
-  margin-bottom: 0px;
+  margin-bottom: 48px;
 }
 
 .footer-navigation {
@@ -845,12 +845,32 @@ fieldset .btn {
 
 .social-list {
   display: flex;
+  position: relative;
   padding: 0;
-  margin-left: 429px;
+  margin-left: 510px;
+}
+
+.social-list::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -510px;
+  width: 80px;
+  height: 8px;
+  background-color: #ffc600;
+}
+
+.social-list li:not(:first-of-type) {
+  padding-left: 23px;
+}
+
+.social-button {
+  opacity: 0.3;
 }
 
 .logo-html {
-  margin-left: 518px;
+  padding-top: 13px;
+  margin-left: 483px;
 }
 
 /* Каталог */
