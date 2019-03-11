@@ -216,7 +216,8 @@ fieldset .bth,
 .monopods,
 .compare,
 .color-item label,
-.filter-presence label {
+.filter-presence label,
+.sorter-item {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -253,6 +254,15 @@ fieldset .bth,
   padding: 0;
   margin-right: 58px;
   background-color: #f7e296;
+}
+
+.catalog-items a:hover,
+.catalog-items a:focus {
+  opacity: 0.6;
+}
+
+.catalog-items a:active{
+  opacity: 0.3;
 }
 
 .catalog-items:nth-of-type(2) {
@@ -930,6 +940,15 @@ fieldset .btn {
   opacity: 0.3;
 }
 
+.social-button:hover,
+.social-button:focus {
+    opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
 .logo-html {
   padding-top: 13px;
   margin-left: 483px;
@@ -962,6 +981,14 @@ fieldset .btn {
   background-position: 0 0;
 }
 
+.user-profile a:hover::before,
+.user-profile a:focus::before {
+  opacity: 0.6;
+}
+.user-profile a:active::before {
+  opacity: 0.3;
+}
+
 .user-profile-footer a::before {
   content: "";
   position: absolute;
@@ -972,6 +999,14 @@ fieldset .btn {
   background-image: url("../img/user_yellow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.user-profile-footer a:hover::before,
+.user-profile-footer a:focus::before {
+  opacity: 0.6;
+}
+.user-profile-footer a:active::before {
+  opacity: 0.3;
 }
 
 .exit-button-catalog {
@@ -995,7 +1030,7 @@ fieldset .btn {
 
 .path-wrapper {
   margin-left: 140px;
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 }
 
 .path {
@@ -1007,7 +1042,7 @@ fieldset .btn {
 .path h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .monopods {
@@ -1078,15 +1113,17 @@ fieldset .btn {
 }
 
 .sorter-wrapper {
-  min-width: 833px;
+  min-width: 822px;
 }
 
 .sorter {
+  display: flex;
+  position: relative;
+  width: 822px;
   margin-bottom: 70px;
 }
 
 .sort-title {
-  position: relative;
   margin: 0;
   margin-left: 74px;
   padding-top: 25px;
@@ -1094,7 +1131,7 @@ fieldset .btn {
   background-color: #ebebeb;
 }
 
-.sort-title::before {
+.sorter::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1106,7 +1143,7 @@ fieldset .btn {
   background-color: #ebebeb;
 }
 
-.sort-title::after {
+.sorter::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1118,18 +1155,42 @@ fieldset .btn {
   background-color: #ebebeb;
 }
 
-.sorter {
-  display: flex;
-}
-
 .sorter-list {
   display: flex;
-  min-width: 113px;
+  min-width: 290px;
   justify-content: space-between;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 21px;
+  padding-left: 55px;
+  padding-bottom: 21px;
 }
+
+.sorter-item a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.sorter-item:nth-child(2),
+.sorter-item:nth-child(3)
+ {
+  opacity: 0.3;
+}
+
+.sorter-item:nth-child(2):hover,
+.sorter-item:nth-child(3):hover
+ {
+  opacity: 0.6;
+}
+
+.sorter-item:nth-child(2):active,
+.sorter-item:nth-child(3):active
+ {
+  opacity: 1;
+}
+
 
 .cards-catalog {
   min-width: 854px;
