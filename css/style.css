@@ -46,7 +46,8 @@ a {
 .bluetooth-filter,
 .catalog-list,
 .companies-list,
-.sorter-list {
+.sorter-list,
+.arrows {
   list-style: none;
 }
 
@@ -419,6 +420,10 @@ fieldset .bth,
   background-image: url("../img/nav-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.up-button {
+
 }
 
 .item a {
@@ -1119,7 +1124,7 @@ fieldset .btn {
 .sorter {
   display: flex;
   position: relative;
-  width: 822px;
+  min-width: 822px;
   margin-bottom: 70px;
 }
 
@@ -1191,6 +1196,39 @@ fieldset .btn {
   opacity: 1;
 }
 
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 42px;
+  margin: 0;
+  margin-left: 220px;
+  padding: 0;
+}
+
+.up-arrow {
+  opacity: 0.2;
+}
+
+.up-arrow:hover{
+  opacity: 0.4;
+}
+
+.up-arrow:active {
+  opacity: 1;
+}
+
+.down-arrow {
+  opacity: 1;
+}
+
+.down-arrow:hover{
+  opacity: 0.4;
+}
+
+.down-arrow:active {
+  opacity: 1;
+}
 
 .cards-catalog {
   min-width: 854px;
