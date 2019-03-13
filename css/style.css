@@ -242,7 +242,7 @@ fieldset .bth,
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   background-color: #f7e296;
 }
 
@@ -470,9 +470,41 @@ fieldset .bth,
 }
 
 .color-item label {
+  position: relative;
+
+  display: block;
+
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.1px;
+
+  user-select: none;
+}
+
+.filter-color-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -42px;
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-color-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .bluetooth-filter input:disabled + label {
@@ -1112,7 +1144,17 @@ fieldset .btn {
   margin: 0;
 }
 
+.color-fieldset li,
+.bluetooth-fieldset li {
+  padding-left: 42px;
+}
+
 .colors-list {
+  padding: 0;
+  margin: 0;
+}
+
+.bluetooth-filter {
   padding: 0;
   margin: 0;
 }
