@@ -494,6 +494,10 @@ fieldset .bth,
   background-position: 0 0;
 }
 
+.filter-color-checkbox:checked + label::before {
+  display: none;
+}
+
 .filter-color-checkbox:checked + label::after {
   content: "";
   position: absolute;
