@@ -101,7 +101,8 @@ a {
 
 /* Шрифт Gilroy Light*/
 
-.catalog-item-price {
+.catalog-item-price,
+.value-wrapper label {
   font-family: 'Gilroy Light', Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -125,11 +126,12 @@ a {
 .path h2,
 .item a,
 .add-to-cart,
-fieldset .filter-color,
-fieldset .bth,
+.filter-color,
+.bth,
 .show,
 .filter-title,
-.sort-title {
+.sort-title,
+.cost-value {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -453,6 +455,48 @@ fieldset .bth,
   background-color: #ebebeb;
 }
 
+.cost {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.cost-value {
+  position: relative;
+  padding-top: 85px;
+  letter-spacing: 0.2px;
+}
+
+.cost-value:before {
+  position: absolute;
+  content: "";
+  top: 70px;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.value-wrapper {
+  display: flex;
+  width: 200px;
+  padding-bottom: 60px;
+}
+
+.value-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.value-wrapper input {
+  width: 50px;
+
+  color: rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: inherit;
+}
+
 .color-item label {
   position: relative;
 
@@ -576,16 +620,43 @@ fieldset .bth,
   opacity: 0.25;
 }
 
-fieldset {
+.color-fieldset {
   border: none;
 }
 
-fieldset .filter-color {
+.filter-color {
+  position: relative;
+  padding-bottom: 28px;
+
   letter-spacing: 0.2px;
 }
 
-fieldset .btn {
+.filter-color:before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.bth {
+  position: relative;
+  padding-bottom: 28px;
   letter-spacing: 0.2px;
+}
+
+.bth:before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.bluetooth-fieldset {
+  border: none;
 }
 
 .filter-presence label {
@@ -1210,12 +1281,14 @@ fieldset .btn {
   padding: 0;
   margin: 0;
   padding-right: 70px;
+  padding-bottom: 40px;
 }
 
 .bluetooth-filter {
   padding: 0;
   margin: 0;
   padding-right: 70px;
+  padding-bottom: 52px;
 }
 
 .sorter-wrapper {
