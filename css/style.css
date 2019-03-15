@@ -422,10 +422,6 @@ fieldset .bth,
   background-position: 0 0;
 }
 
-.up-button {
-
-}
-
 .item a {
   letter-spacing: 0.2px;
 }
@@ -457,22 +453,8 @@ fieldset .bth,
   background-color: #ebebeb;
 }
 
-.color-item input:disabled + label {
-  opacity: 0.25;
-}
-
-.color-item input:hover {
-  opacity: 0.6;
-}
-
-.color-item input:checked {
-  opacity: 1;
-}
-
 .color-item label {
   position: relative;
-
-  display: block;
 
   font-size: 14px;
   line-height: 40px;
@@ -484,7 +466,7 @@ fieldset .bth,
 .filter-color-checkbox + label::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 0;
   left: -42px;
   width: 23px;
   height: 23px;
@@ -501,7 +483,7 @@ fieldset .bth,
 .filter-color-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 0;
   left: -42px;
   width: 27px;
   height: 23px;
@@ -511,16 +493,87 @@ fieldset .bth,
   background-position: 0 0;
 }
 
-.bluetooth-filter input:disabled + label {
+.filter-color-checkbox:disabled + label,
+.filter-color-checkbox:checked:disabled + label {
+  color: #a6a6a6;
+ }
+
+ .color-item label:hover::before,
+ .color-item label:hover::after {
+   opacity: 0.6;
+ }
+
+ .color-item label:active::before,
+ .color-item label:active::after {
+   opacity: 1;
+ }
+
+.filter-color-checkbox:disabled + label::before,
+.filter-color-checkbox:checked:disabled + label::after
+ {
   opacity: 0.25;
 }
 
-.bluetooth-filter input:hover {
+.filter-presence label {
+  position: relative;
+
+  display: block;
+
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+
+  user-select: none;
+}
+
+.presence-radio:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -42px;
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.presence-radio:checked + label::after {
+  display: none;
+}
+
+.presence-radio + label::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -42px;
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.presence-radio:checked:disabled + label,
+.presence-radio:disabled + label {
+  color: #a6a6a6;
+ }
+
+.filter-presence label:hover::after,
+.filter-presence label:hover::before {
   opacity: 0.6;
 }
 
-.bluetooth-filter input:checked {
+.filter-presence label:active::after,
+.filter-presence label:active::before {
   opacity: 1;
+}
+
+.presence-radio:checked:disabled + label::before,
+.presence-radio:disabled + label::after {
+  opacity: 0.25;
 }
 
 fieldset {
@@ -1156,11 +1209,13 @@ fieldset .btn {
 .colors-list {
   padding: 0;
   margin: 0;
+  padding-right: 70px;
 }
 
 .bluetooth-filter {
   padding: 0;
   margin: 0;
+  padding-right: 70px;
 }
 
 .sorter-wrapper {
