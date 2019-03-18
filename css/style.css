@@ -47,7 +47,9 @@ a {
 .catalog-list,
 .companies-list,
 .sorter-list,
-.arrows {
+.arrows,
+.pagination,
+.pages-list {
   list-style: none;
 }
 
@@ -131,7 +133,10 @@ a {
 .show,
 .filter-title,
 .sort-title,
-.cost-value {
+.cost-value,
+.pagination-prev,
+.pagination-next,
+.pages-item a {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -451,10 +456,6 @@ a {
 
 /* Фильтр каталога*/
 
-.filter {
-  background-color: #ebebeb;
-}
-
 .cost {
   margin: 0;
   padding: 0;
@@ -669,6 +670,71 @@ a {
   text-transform: uppercase;
   background-color: #ebebeb;
   border: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 75px;
+  padding: 0;
+  background-color: #ebebeb
+}
+
+.pages-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93px;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-prev,
+.pagination-next {
+  display: block;
+  padding: 30px;
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.pagination-prev:hover,
+.pagination-next:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-prev:active,
+.pagination-next:active {
+  opacity: 0.3;
+}
+
+.pages-item a {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  opacity: 0.3;
+}
+
+.pages-item a:hover {
+  opacity: 0.6;
+}
+
+.pages-item a:active {
+  opacity: 1;
+}
+
+.pages-item-first a {
+  opacity: 1;
+}
+
+.pages-item-first a:hover {
+  opacity: 1;
 }
 
 /* Модалки */
@@ -1246,7 +1312,7 @@ a {
 .filter {
   position: relative;
   width: 268px;
-  min-height: 1216px;
+  height: 100%;
 }
 
 .filter::before {
@@ -1257,6 +1323,7 @@ a {
   bottom: 0;
   left: 0;
   z-index: -1;
+  height: 100%;
   margin-left: calc(50% - 50vw);
   background-color: #ebebeb;
 }
@@ -1408,6 +1475,7 @@ a {
   min-width: 854px;
   margin-left: 30px;
   padding-left: 20px;
+  padding-bottom: 40px;
 }
 
 .catalog-list {
@@ -1427,12 +1495,35 @@ a {
 }
 
 .catalog-item {
+  position: relative;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
+}
+
+.catalog-item-image {
+  position: relative;
+  margin: 0;
+}
+
+.catalog-hover {
+
+  position: absolute;
+  display: none;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  padding-left: 80px;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.catalog-item:hover .catalog-hover {
+  display: block;
 }
 
 .item-info h3 {
