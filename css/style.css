@@ -136,7 +136,8 @@ a {
 .cost-value,
 .pagination-prev,
 .pagination-next,
-.pages-item a {
+.pages-item a,
+.label-new {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -445,12 +446,21 @@ a {
 }
 
 .compare {
-  opacity: 0.5;
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 0.1px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
+
+  padding-left: 37px;
+}
+
+.compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.compare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1500,17 +1510,51 @@ a {
   margin-right: 20px;
 }
 
-.catalog-item:nth-child(2n) {
+.catalog-item:nth-child(2) {
   margin-right: 0;
 }
 
-.catalog-item-image {
+.catalog-img {
   position: relative;
-  margin: 0;
+}
+
+.label-new::after {
+  position: absolute;
+  content: "NEW";
+  width: 60px;
+  height: 60px;
+  top: 28px;
+  right: 28px;
+  font-size: 14px;
+  line-height: 60px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  user-select: none;
+  opacity: 0.1;
+}
+
+.item-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.item {
+  width: 260px;
+}
+
+.catalog-item:nth-of-type(2) h3 {
+  width: 230px;
+}
+
+.catalog-item:nth-of-type(4) h3 {
+  width: 230px;
 }
 
 .catalog-hover {
-
   position: absolute;
   display: none;
   z-index: 2;
@@ -1519,10 +1563,11 @@ a {
   padding-top: 180px;
   padding-bottom: 120px;
   padding-left: 80px;
+  padding-right: 42px;
   background-color: rgba(238, 238, 238, 0.7);
 }
 
-.catalog-item:hover .catalog-hover {
+.catalog-hover:hover, .catalog-img:hover + .catalog-hover {
   display: block;
 }
 
