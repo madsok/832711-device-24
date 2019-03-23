@@ -977,11 +977,62 @@ a {
 }
 
 .container {
-  display: flex;
   width: 1160px;
   margin: 0 auto;
   padding-top: 50px;
   margin-bottom: 80px;
+}
+
+.brands {
+  width: 1160px;
+  padding-top: 93px;
+  padding-bottom: 150px;
+}
+
+.brands-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.brand-link {
+  display: block;
+  width: 260px;
+  height: 100px;
+}
+
+.brand-link-dji {
+  background-image: url("../img/dji-logo-gray.png");
+}
+
+.brand-link-dji:hover {
+  background-image: url("../img/dji-logo.png");
+}
+
+.brand-link-spg {
+  background-image: url("../img/spg-logo-gray.png");
+}
+
+.brand-link-spg:hover {
+  background-image: url("../img/spg-logo.png");
+}
+
+.brand-link-gopro {
+  background-image: url("../img/gopro-logo-gray.png");
+}
+
+.brand-link-gopro:hover {
+  background-image: url("../img/gopro-logo.png");
+}
+
+.brand-link-vive {
+  background-image: url("../img/vive-logo-gray.png");
+}
+
+.brand-link-vive:hover {
+  background-image: url("../img/vive-logo.png");
 }
 
 .about-header,
@@ -1012,9 +1063,14 @@ a {
   background-color: #000000;
 }
 
+.about-us-wrapper {
+  display: flex;
+}
+
 .about-us {
   width: 560px;
   margin-right: 20px;
+  padding-top: 52px;
   padding-right: 85px;
 }
 
@@ -1053,6 +1109,7 @@ a {
 .contacts {
   width: 560px;
   margin-left: 20px;
+  padding-top: 52px;
 }
 
 .contacts p {
