@@ -64,7 +64,186 @@
       </nav>
     </header>
     <main class="container">
-      
+        <section class="slider-goods">
+          <input class="selfie-input visually-hidden" type="radio" id="btn-4" name="goods" checked>
+          <input class="bracer-input visually-hidden" type="radio" id="btn-5" name="goods">
+          <input class="quadro-input visually-hidden" type="radio" id="btn-6" name="goods">
+          <div class="slider-goods-controls">
+            <label class="slider-goods-label" for="btn-4"></label>
+            <label class="slider-goods-label" for="btn-5"></label>
+            <label class="slider-goods-label" for="btn-6"></label>
+          </div>
+          <div class="goods-slide selfie-slide">
+            <div class="selfie-slide-img">
+              <img src="img/slider-1-png.png" width="384" height="486" alt="Селфи-палка" />
+            </div>
+            <div class="goods-slide-info selfie-slide-info">
+              <h2>Делай селфи, как Бен Стиллер!</h2>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a class="btn btn-more" href="#">Подробнее</a>
+              <dl class="list-stats selfie-stats">
+                <div>
+                  <dt class="description">
+                    Длина палки
+                  </dt>
+                  <dd class="measure">
+                    8,5 м
+                  </dd>
+                </div>
+                <div>
+                  <dt class="description">
+                    Вес палки
+                  </dt>
+                  <dd class="measure">
+                    5 кг
+                  </dd>
+                </div>
+                <div>
+                  <dt class="description  description-carbon">
+                    Материал
+                  </dt>
+                  <dd class="measure measure-carbon">
+                    Карбон
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="goods-slide bracer-slide">
+            <div class="bracer-slide-img">
+              <img src="img/slider-2-png.png" width="345" height="485" alt="Фитнес-браслет" />
+            </div>
+            <div class="goods-slide-info bracer-slide-info">
+              <h2>Худеем правильно!</h2>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                  не пропускать занятия и соблюдать диету.
+              </p>
+              <a class="btn btn-more" href="#">Подробнее</a>
+              <dl class="list-stats bracer-stats">
+                <div>
+                  <dt class="measure">
+                    48 часов
+                  </dt>
+                  <dd class="description">
+                    Без подзарядки
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="goods-slide quadro-slide">
+            <div class="quadro-slide-img">
+              <img src="img/slider-3-png.png" width="526" height="334" alt="Квадрокоптер" />
+            </div>
+            <div class="goods-slide-info quadro-slide-info">
+              <h2>Порхает как бабочка, жалит как пчела!</h2>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+                  мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="btn btn-more" href="#">Подробнее</a>
+              <dl class="list-stats quadro-stats">
+                <div>
+                  <dt class="measure">
+                    800 м
+                  </dt>
+                  <dd class="description">
+                    Дальность полета
+                  </dd>
+                </div>
+                <div>
+                  <dt class="measure">
+                    50 м
+                  </dt>
+                  <dd class="description">
+                    Радиус поражения
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+      <section class="popular-goods">
+        <ul class="goods-list">
+          <li class="goods-item">
+            <a href="#">
+              <div class="goods-item-card">
+                <img src="img/popular-1.svg" width="97" height="55" alt="" />
+              </div>
+              <h3>Вирутальная реальность</h3>
+          </a>
+          </li>
+          <li class="goods-item">
+            <a href="#">
+              <div class="goods-item-card goods-item-card-2">
+                <img src="img/popular-2.svg" width="86" height="117" alt="" />
+              </div>
+              <h3>Моноподы для селфи</h3>
+            </a>
+          </li>
+          <li class="goods-item">
+            <a href="#">
+              <div class="goods-item-card">
+                <img src="img/popular-3.svg" width="71" height="87" alt="" />
+              </div>
+              <h3>Экшн-камеры</h3>
+            </a>
+          </li>
+          <li class="goods-item">
+            <a href="#">
+              <div class="goods-item-card">
+                <img src="img/popular-4.svg" width="107" height="65" alt="" />
+              </div>
+              <h3>Фитнес-браслеты</h3>
+            </a>
+          </li>
+          <li class="goods-item">
+            <a href="#">
+              <div class="goods-item-card">
+                <img src="img/popular-5.svg" width="56" height="98" alt="" />
+              </div>
+              <h3>Умные часы</h3>
+            </a>
+          </li>
+          <li class="goods-item">
+            <a href="#">
+              <div class="goods-item-card">
+                <img src="img/poppular-6.svg" width="132" height="62" alt="" />
+              </div>
+              <h3>Квадрокоптеры</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="slider-services-wrapper">
+        <section class="slider-services">
+          <input class="delivery-input visually-hidden" type="radio" id="btn-1" name="services" checked>
+          <input class="warranity-input visually-hidden" type="radio" id="btn-2" name="services">
+          <input class="credit-input visually-hidden" type="radio" id="btn-3" name="services">
+          <div class="slider-services-controls">
+            <label class="btn-slider btn-slider-1" for="btn-1">Доставка</label>
+            <label class="btn-slider btn-slider-2" for="btn-2">Гарантия</label>
+            <label class="btn-slider btn-slider-3" for="btn-3">Кредит</label>
+          </div>
+          <div class="services-slide delivery-slide">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="services-slide warranity-slide">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br />
+                Товар, не дом, конечно же.</p>
+          </div>
+          <div class="services-slide credit-slide">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+        </section>
+      </div>
       <section class="brands">
         <ul class="brands-list">
           <li class="brand-item">
