@@ -290,7 +290,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <p class="map-block">
-            <a class="map" href="map.html">
+            <a class="map" href="https://www.google.ru/maps?hl=ru">
               <img src="img/map-jpg.png" width="560" height="222" alt="Мы находимся по адресу город Москва, ул. Строителей, 15">
             </a>
           </p>
@@ -397,31 +397,33 @@
 
     <section class="modal-write-us">
       <h2 class="visually-hidden">Форма для вашего сообщения</h2>
-      <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
-        <p>
-          <label for="name-input">Ваше имя:</label>
-          <input class="name-field" id="name-input" type="text" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email-input">Ваш e-mail:</label>
-          <input class="email-field" id="email-input" type="text" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="message-input">Текст письма</label>
-          <input class="message-field" id="message-input" type="text" placeholder="В свободной форме">
-        </p>
-        <button class="submit-button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button" aria-label="Закрыть">X</button>
+      <div class="write-us-wrapper">
+        <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="write-us write-us-name">
+            <label for="name-input">Ваше имя:</label>
+            <input class="name-field" id="name-input" type="text" placeholder="Имя Фамилия">
+          </div>
+          <div class="write-us write-us-email">
+            <label for="email-input">Ваш e-mail:</label>
+            <input class="email-field" id="email-input" type="email" placeholder="email@example.com">
+          </div>
+          <div class="write-us write-us-message">
+            <label for="message-input">Текст письма</label>
+            <textarea class="message-field" id="message-input" type="text" placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="submit-button btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <button class="modal-close-form" type="button" aria-label="Закрыть"></button>
     </section>
 
     <section class="modal-map">
     <h2 class="visually-hidden">Карта проезда</h2>
       <p>
-        <a class="google-maps" href="https://www.google.ru/maps?hl=ru">
+        <a class="google-maps" href="#">
           <img src="img/map-big-jpg.png" width="960" height="559" alt="Карта проезда">
         </a>
-        <button class="modal-close" type="button" aria-label="Закрыть">X</button>
+        <button class="modal-close-map" type="button" aria-label="Закрыть"></button>
       </p>
     </section>
 

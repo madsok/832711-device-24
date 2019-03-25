@@ -146,7 +146,9 @@ a {
 .goods-slide-info h2,
 .bracer-slide-info h2,
 .quadro-slide-info h2,
-.btn-more {
+.btn-more,
+.write-us-form label,
+.submit-button {
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -239,7 +241,10 @@ a {
 .services-slide p,
 .goods-slide-info p,
 .description,
-.search-button {
+.search-button,
+.name-field,
+.email.field,
+.message-field {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -869,13 +874,180 @@ a {
 /* Модалки */
 
 .modal-write-us {
-  display: block;
+  position: relative;
+  display: none;
+}
+
+.write-us-wrapper {
+  position: relative;
+  width: 960px;
+  height: 553px;
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+}
+
+.write-us-form  {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.write-us-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.write-us-name label {
+  padding-bottom: 10px;
+  letter-spacing: normal;
+}
+
+.write-us-name {
+  margin-right: 40px;
+  margin-bottom: 38px;
+}
+
+.name-field {
+  width: 360px;
+  height: 50px;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  background-color: rgba(230,230,230,.5);
+}
+
+.write-us-email label {
+  padding-bottom: 10px;
+  letter-spacing: normal;
+}
+
+.email-field {
+  width: 360px;
+  height: 50px;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  background-color: rgba(230,230,230,.5);
+}
+
+.write-us-message {
+  margin-bottom: 50px;
+}
+
+.write-us-message label {
+  padding-bottom: 10px;
+  letter-spacing: normal;
+}
+
+.message-field {
+  width: 760px;
+  min-height: 156px;
+  padding-top: 18px;
+  padding-left: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+  border: 0;
+  outline: 0;
+  resize: none;
+  box-sizing: border-box;
+  background-color: rgba(230,230,230,.5);
+}
+
+.submit-button {
+  width: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  background: 0;
+  border: 0;
+}
+
+.modal-close-form {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 22px;
+  left: 885px;
+  opacity: 0.5;
+  border: none;
+  background: url("../img/modal-close.svg") no-repeat;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+  background-color: rgba(230, 230, 230, 0.8);
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+  background-color: #ffffff;
+  border: 3px solid rgba(240, 197, 46, 0.5);
+}
+
+.write-us input:invalid {
+  background-color: rgba(237, 181, 181, 1.0);
+}
+
+.modal-close-form:hover {
+  opacity: 1;
+}
+
+.modal-close-form:active {
+  opacity: 0.3;
 }
 
 .modal-map {
-  display: block;
+  position: relative;
+  display: none;
 }
 
+.modal-close-map {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 22px;
+  left: 878px;
+  opacity: 0.5;
+  border: none;
+  background: url("../img/modal-close.svg") no-repeat;
+}
+
+.modal-close-map:hover {
+  opacity: 1;
+}
+
+.modal-close-map:active {
+  opacity: 0.3;
+}
 
 /* Сетки */
 
