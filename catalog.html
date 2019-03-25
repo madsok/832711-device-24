@@ -24,8 +24,9 @@
         <div class="user-wrapper">
           <section class="search">
             <h3 class="visually-hidden">Форма поиска по сайту</h3>
-            <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-              <input class="search-field" id="search-input" type="text" placeholder="Поиск по сайту">
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+              <input class="search-field" id="search-input" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="search-button" type="submit">Найти</button>
               <label class="search-icon" for="search-input"></label>
             </form>
           </section>
@@ -102,10 +103,10 @@
               </div>
               <div class="value-wrapper">
                 <label class="range-label-min" for="from">от
-                  <input class="input-range-min" name="from" type="text" value="0">
+                  <input class="input-range-min" id="from" name="from-min" type="text" value="0">
                 </label>
                 <label class="range-label-max" for="to">до
-                  <input class="input-range-max" name="to" type="text" value="5000">
+                  <input class="input-range-max" id="to" name="to-max" type="text" value="5000">
                 </label>
               </div>
             </fieldset>

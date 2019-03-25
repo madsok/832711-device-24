@@ -22,8 +22,9 @@
         <div class="user-wrapper">
           <section class="search">
             <h3 class="visually-hidden">Форма поиска по сайту</h3>
-            <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-              <input class="search-field" id="search-input" type="text" placeholder="Поиск по сайту">
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+              <input class="search-field" id="search-input" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="search-button" type="submit">Найти</button>
               <label class="search-icon" for="search-input"></label>
             </form>
           </section>
@@ -84,7 +85,7 @@
               </p>
               <a class="btn btn-more" href="#">Подробнее</a>
               <dl class="list-stats selfie-stats">
-                <div>
+                <div class="selfie-stats-list">
                   <dt class="description">
                     Длина палки
                   </dt>
@@ -92,7 +93,7 @@
                     8,5 м
                   </dd>
                 </div>
-                <div>
+                <div class="selfie-stats-list">
                   <dt class="description">
                     Вес палки
                   </dt>
@@ -100,7 +101,7 @@
                     5 кг
                   </dd>
                 </div>
-                <div>
+                <div class="selfie-stats-list">
                   <dt class="description  description-carbon">
                     Материал
                   </dt>
@@ -122,12 +123,12 @@
               </p>
               <a class="btn btn-more" href="#">Подробнее</a>
               <dl class="list-stats bracer-stats">
-                <div>
-                  <dt class="measure">
-                    48 часов
-                  </dt>
-                  <dd class="description">
+                <div class="bracer-stats-list">
+                  <dt class="description">
                     Без подзарядки
+                  </dt>
+                  <dd class="measure">
+                    48 часов
                   </dd>
                 </div>
               </dl>
@@ -144,7 +145,7 @@
               </p>
               <a class="btn btn-more" href="#">Подробнее</a>
               <dl class="list-stats quadro-stats">
-                <div>
+                <div class="quadro-stats-list">
                   <dt class="measure">
                     800 м
                   </dt>
@@ -152,7 +153,7 @@
                     Дальность полета
                   </dd>
                 </div>
-                <div>
+                <div class="quadro-stats-list">
                   <dt class="measure">
                     50 м
                   </dt>
@@ -245,6 +246,7 @@
         </section>
       </div>
       <section class="brands">
+        <h2 class="visually-hidden">Бренды</h2>
         <ul class="brands-list">
           <li class="brand-item">
             <a class="brand-link brand-link-dji" href="#"></a>
