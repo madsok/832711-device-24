@@ -1,13 +1,15 @@
 @font-face {
   font-family: 'Gilroy ExtraBold';
-  src: url('../fonts/gilroyextrabold.woff2');
+  src: url('../fonts/gilroyextrabold.woff2'),
+  url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy Light';
-  src: url('../fonts/gilroylight.woff2');
+  src: url('../fonts/gilroylight.woff2'),
+  url("../fonts/gilroylight.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +23,18 @@ header {
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #000000;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -75,6 +88,18 @@ a {
   opacity: 0.3;
 }
 
+.user-navigation a {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -102,69 +127,8 @@ a {
   overflow: hidden;
 }
 
-/* Шрифт Gilroy Light*/
-
-.catalog-item-price,
-.value-wrapper label,
-.measure {
-  font-family: 'Gilroy Light', Tahoma, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #464646;
-}
-
-/* Шрифт Gilroy ExtraBold*/
-
-.site-navigation a,
-.about-us h2,
-.companies-list .list-item,
-.about-us .button-about,
-.contacts h2,
-.contacts .button-write,
-.site-navigation-footer a,
-.path h2,
-.item a,
-.add-to-cart,
-.filter-color,
-.bth,
-.show,
-.filter-title,
-.sort-title,
-.cost-value,
-.pagination-prev,
-.pagination-next,
-.pages-item a,
-.label-new,
-.services-slide h2,
-.slider-services-controls label,
-.goods-item h3,
-.goods-slide-info h2,
-.bracer-slide-info h2,
-.quadro-slide-info h2,
-.btn-more,
-.write-us-form label,
-.submit-button {
-  font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 24px;
-  letter-spacing: 3.6px;
-  text-align: left;
-  color: #000000;
-}
-
 .site-navigation a {
-  text-transform: uppercase;
-}
-
-.add-to-cart {
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -183,6 +147,7 @@ a {
 .about-us .button-about {
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .contacts h2 {
@@ -194,6 +159,7 @@ a {
 .contacts .button-write {
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .site-navigation-footer a {
@@ -221,39 +187,6 @@ a {
   font-size: 16px;
   letter-spacing: 3.2px;
   text-transform: uppercase;
-}
-
-/* Шрифт Open Sans*/
-
-.catalog-items a,
-.search-field,
-.user-navigation a,
-.about-us p,
-.contacts p,
-.company-info .address,
-.company-info .phone,
-.user-navigation-footer a,
-.monopods,
-.compare,
-.color-item label,
-.filter-presence label,
-.sorter-item,
-.services-slide p,
-.goods-slide-info p,
-.description,
-.search-button,
-.name-field,
-.email.field,
-.message-field {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #000000;
 }
 
 /* Раскрывающийся каталог*/
@@ -302,6 +235,16 @@ a {
 }
 
 .catalog-items a {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+
   text-transform: none;
 }
 
@@ -344,6 +287,17 @@ a {
 
 .search-field {
   width: 315px;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+
   background-color: rgba(240, 197, 46, 0);
   opacity: 0.3;
   border: none;
@@ -353,14 +307,24 @@ a {
 
 .search-button {
   position: absolute;
+  display: none;
   width: 85px;
   height: 49px;
   top: -10px;
   left: 356px;
   margin-top: auto;
   margin-bottom: auto;
-  display: none;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
   text-align: center;
+  color: #000000;
+
   background: 0 0;
   background-color: transparent;
   border: 2px solid #000000;
@@ -433,23 +397,19 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.about-us p {
-  letter-spacing: normal;
-  color: #464646;
-}
-
-/* Контакты*/
-
-.contacts p {
-  letter-spacing: normal;
-  color: #464646;
-}
 
 /* Футер*/
 
 .company-info .address,
 .company-info .phone {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
   letter-spacing: normal;
+  text-align: left;
   color: #ffffff;
 }
 
@@ -462,6 +422,14 @@ a {
 }
 
 .user-navigation-footer a {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -514,22 +482,24 @@ a {
 }
 
 .item a {
+  font-size: 18px;
   letter-spacing: 0.2px;
-}
-
-.show {
-  width: 200px;
-  padding-left: 42px;
+  color: #000000;
 }
 
 .add-to-cart {
   width: 200px;
   padding-left: 37px;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .compare {
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 36px;
   letter-spacing: 0.1px;
   text-align: center;
@@ -606,6 +576,13 @@ a {
 .value-wrapper label {
   font-size: 14px;
   line-height: 24px;
+  font-family: 'Gilroy Light', Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0.2px;
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
 }
@@ -615,7 +592,7 @@ a {
 
   color: rgba(0, 0, 0, 0.2);
   border: none;
-  background-color: inherit;
+  background: 0 0;
 }
 
 .range-label-max {
@@ -625,9 +602,15 @@ a {
 .color-item label {
   position: relative;
 
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 40px;
   letter-spacing: 0.1px;
+  text-align: left;
+  color: #000000;
 
   user-select: none;
 }
@@ -667,14 +650,14 @@ a {
   color: #a6a6a6;
  }
 
- .color-item label:hover::before,
- .color-item label:hover::after {
-   opacity: 0.6;
+.color-item label:hover::before,
+.color-item label:hover::after {
+  opacity: 0.6;
  }
 
- .color-item label:active::before,
- .color-item label:active::after {
-   opacity: 1;
+.color-item label:active::before,
+.color-item label:active::after {
+  opacity: 1;
  }
 
 .filter-color-checkbox:disabled + label::before,
@@ -685,12 +668,17 @@ a {
 
 .filter-presence label {
   position: relative;
-
   display: block;
 
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 40px;
   letter-spacing: 0.1px;
+  text-align: left;
+  color: #000000;
 
   user-select: none;
 }
@@ -791,6 +779,15 @@ a {
 }
 
 .show {
+  width: 200px;
+  padding-left: 42px;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-align: left;
   text-transform: uppercase;
   background-color: #ebebeb;
   border: none;
@@ -835,6 +832,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.2px;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -852,6 +850,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.2px;
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -915,6 +914,7 @@ a {
   padding-top: 16px;
   padding-left: 20px;
   padding-bottom: 16px;
+  font-family: "Open Sans","Arial",sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -940,6 +940,7 @@ a {
   padding-top: 16px;
   padding-left: 20px;
   padding-bottom: 16px;
+  font-family: "Open Sans","Arial",sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -968,6 +969,7 @@ a {
   min-height: 156px;
   padding-top: 18px;
   padding-left: 18px;
+  font-family: "Open Sans","Arial",sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -985,10 +987,17 @@ a {
 
 .submit-button {
   width: 200px;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
   text-align: center;
   background: 0;
   border: 0;
+  color: #000000;
 }
 
 .modal-close-form {
@@ -1403,6 +1412,18 @@ a {
   padding-top: 88px;
 }
 
+.goods-slide-info p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
 .selfie-stats {
   display: flex;
 }
@@ -1432,9 +1453,14 @@ a {
   margin: 0;
   margin-bottom: 5px;
 
+  font-family: 'Gilroy Light', Tahoma, sans-serif;
   font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0.4px;
+  text-align: left;
   color: #000;
 }
 
@@ -1444,9 +1470,16 @@ a {
 
 .description {
   margin: 0;
+
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 20px;
   letter-spacing: 0.13px;
+  text-align: left;
+  color: #000000;
 }
 
 .description-carbon {
@@ -1455,6 +1488,7 @@ a {
 
 .btn-more {
   width: 220px;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 50px;
@@ -1522,8 +1556,10 @@ a {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
+  color: #000;
 }
 
 .goods-item-card-2 + h3 {
@@ -1564,6 +1600,18 @@ a {
 .services-slide {
   padding-top: 75px;
   margin-left: 120px;
+}
+
+.services-slide p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
 }
 
 .services-slide h2 {
@@ -1837,6 +1885,16 @@ a {
 .about-us p {
   margin: 0;
   margin-bottom: 30px;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
 }
 
 .about-us p:last-of-type {
@@ -1875,6 +1933,16 @@ a {
 .contacts p {
   margin: 0;
   margin-bottom: 38px;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
 }
 
 .contacts .map-block {
@@ -2151,6 +2219,16 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
 }
 
 .filter-container {
@@ -2278,6 +2356,18 @@ a {
   padding-top: 19px;
   padding-left: 55px;
   padding-bottom: 19px;
+}
+
+.sorter-item {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
 }
 
 .sorter-item a {
@@ -2441,9 +2531,18 @@ a {
   padding: 0;
 }
 
-p.catalog-item-price {
+.catalog-item-price {
   padding: 0;
   margin-top: 0;
+  font-family: 'Gilroy Light', Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #464646;
 }
 
 .user-navigation-footer-catalog {
