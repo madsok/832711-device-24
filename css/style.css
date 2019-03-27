@@ -1951,7 +1951,6 @@ a {
 }
 
 .main-footer {
-  min-width: 1440px;
   padding-top: 65px;
   padding-bottom: 65px;
 }
@@ -2191,19 +2190,17 @@ a {
 }
 
 .container-catalog {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0;
+
 }
 
 .path-wrapper {
-  margin-left: 140px;
+  width: 1200px;
+  margin: 0 auto;
   margin-bottom: 42px;
 }
 
 .path {
-  width: 1040px;
-  margin: 0;
+  margin: 0 auto;
   padding-left: 60px;
 }
 
@@ -2233,7 +2230,8 @@ a {
 
 .filter-container {
   display: flex;
-  min-width: 1100px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .filter-title {
@@ -2276,7 +2274,6 @@ a {
 }
 
 .filters {
-  margin-left: 140px;
   padding-left: 60px;
 }
 
