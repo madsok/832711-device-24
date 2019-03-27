@@ -178,6 +178,9 @@ a {
 }
 
 .path h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.5px;
@@ -255,7 +258,6 @@ a {
   width: 443px;
   padding-left: 39px;
   position: relative;
-  padding-top: 3px;
 }
 
 .search-icon {
@@ -748,7 +750,7 @@ a {
 .filter-color::before {
   position: absolute;
   content: "";
-  top: -10px;
+  top: -12px;
   width: 200px;
   height: 2px;
   background-color: #000000;
@@ -763,7 +765,7 @@ a {
 .bth::before {
   position: absolute;
   content: "";
-  top: -10px;
+  top: -13px;
   width: 200px;
   height: 2px;
   background-color: #000000;
@@ -874,14 +876,19 @@ a {
 /* Модалки */
 
 .modal-write-us {
-  position: relative;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  z-index: 10;
   display: none;
+  width: 960px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
 
 .write-us-wrapper {
   position: relative;
   width: 960px;
-  height: 553px;
   padding-top: 90px;
   padding-left: 100px;
   padding-right: 100px;
@@ -1036,8 +1043,19 @@ a {
 }
 
 .modal-map {
-  position: relative;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  z-index: 10;
   display: none;
+  width: 960px;
+  height: 560px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.modal-map p {
+  margin: 0;
 }
 
 .modal-close-map {
@@ -1128,7 +1146,7 @@ a {
 
 .user-wrapper {
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .user-navigation {
@@ -1136,7 +1154,6 @@ a {
   padding: 0;
   margin: 0;
   margin-left: 83px;
-  padding-top: 4px;
 }
 
 .login-link a {
@@ -1283,11 +1300,12 @@ a {
   content: "01";
   position: absolute;
   top: -8px;
-  right: 52px;
+  right: 47px;
   z-index: 1;
   font-weight: 800;
   font-size: 179px;
   line-height: 179px;
+  letter-spacing: 1.8px;
   text-align: right;
   font-family: 'Gilroy ExtraBold', Tahoma, sans-serif;
   color: #ffffff;
@@ -1302,9 +1320,9 @@ a {
 }
 
 .selfie-slide-info h2 {
-  width: 399px;
   margin: 0;
   margin-bottom: 18px;
+  box-sizing: border-box;
 
   font-size: 47px;
   line-height: 56px;
@@ -1528,7 +1546,7 @@ a {
 .popular-goods {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .goods-list {
@@ -1966,6 +1984,10 @@ a {
 
 .logo-user-wrapper {
   display: flex;
+  margin-bottom: 25px;
+}
+
+.logo-user-wrapper-main {
   margin-bottom: 30px;
 }
 
@@ -2131,12 +2153,12 @@ a {
 /* Каталог */
 
 .main-navigation-catalog {
-  padding-bottom: 50px;
+  padding-bottom: 53px;
 }
 
 .catalog-header {
   min-height: 170px;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 .user-profile {
@@ -2200,18 +2222,12 @@ a {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .path {
   margin: 0 auto;
   padding-left: 60px;
-}
-
-.path h2 {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 22px;
 }
 
 .monopods {
@@ -2396,6 +2412,10 @@ a {
   padding: 0;
 }
 
+.arrows li:nth-child(2) {
+  padding-left: 20px;
+}
+
 .up-arrow {
   opacity: 0.2;
 }
@@ -2432,7 +2452,7 @@ a {
 .item-info {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 
@@ -2478,18 +2498,6 @@ a {
   box-sizing: border-box;
   user-select: none;
   opacity: 0.1;
-}
-
-.item {
-  width: 260px;
-}
-
-.catalog-item:nth-of-type(2) h3 {
-  width: 230px;
-}
-
-.catalog-item:nth-of-type(4) h3 {
-  width: 230px;
 }
 
 .catalog-hover {
