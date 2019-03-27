@@ -2052,18 +2052,16 @@ a {
 
 .company-info {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 48px;
-}
-
-.footer-navigation {
-  margin-left: 164px;
 }
 
 .site-navigation-footer {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .warranity-footer {
@@ -2074,10 +2072,17 @@ a {
   margin-left: 33px;
 }
 
+.footer-navigation {
+  flex-grow: 5;
+}
+
+.address {
+  flex-grow: 4;
+}
+
 .phone {
   margin: 0;
   padding: 0;
-  margin-left: 200px;
 }
 
 .footer-social {
